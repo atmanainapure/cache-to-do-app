@@ -1,6 +1,6 @@
 // Cache offline app shell. Task data is stored separately on the device.
 const PREFIX = 'cache-static:' + self.registration.scope + ':';
-const CACHE = PREFIX + '7ad38db14a7b';
+const CACHE = PREFIX + 'atmanirbhar-v1';
 const FILES = ["index.html","app.f0a5e487e8eb.js","styles.f6b14da875bd.css","manifest.webmanifest","favicon.svg","icon-192.png","icon-512.png","icon-maskable.png"];
 const urls = FILES.map(file => new URL(file, self.registration.scope).href);
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(urls))); });
