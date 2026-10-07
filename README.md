@@ -72,22 +72,6 @@ Tap the **Backups** button in the top bar (the archive-box icon).
 
 Restore adds task IDs that are not already present. It keeps their categories, spaces, and completion dates. Existing tasks with the same ID remain unchanged. Reading and creating a backup happens locally; no file is uploaded.
 
-**Do not upload your personal backup JSON files to a public GitHub repository.** The public repository should contain only the app files.
 
 
 
-[GitHub file-upload instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository) · [GitHub Pages configuration](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
-
-## Troubleshooting
-
-**I see GitHub code or a README instead of the app.** Open the `github.io` website address, not the `github.com` repository page or a Raw file link.
-
-**I see a 404 page.** Check that the Pages deployment finished successfully, `main` and `/ (root)` are selected, and `index.html` is at the repository's top level. Use the exact URL from Settings → Pages, including the repository name and trailing slash.
-
-**The page is blank or unstyled.** Confirm that the JavaScript, CSS, manifest, service worker, and icons were all uploaded with their original names. Reload while online. Browser extensions that disable JavaScript can prevent the app from running.
-
-**It does not open offline.** Open the installed home-screen app while online and wait for Offline ready before trying again. Opening a ZIP or a local `file://` page does not install the service worker. Use the HTTPS Pages address. A browser may remove cached files; reopen online to restore them.
-
-**My tasks are missing.** Check that you are using the same browser/installation and exact app URL. If you exported a backup, restore it. There is no server copy or account recovery.
-
-**How do I update the app?** Publish a new prepared version to the same repository and URL, keeping all files from that version together. Open Cache while online, close all Cache tabs/windows, then reopen it. The new service worker activates after the older app windows close. App-file updates do not deliberately clear the separate task store; keep a backup before substantial changes.
