@@ -8,7 +8,6 @@ A simple to-do app for your phone. Put everything in **Main Memory**, choose a f
 
 **[Open Cache](https://atmanainapure.github.io/cache-to-do-app/)**
 
-> **For the repository owner:** Before sharing this README, replace the link above with the live address from **Settings → Pages**. The address shown above is a placeholder, not a published app. Follow “Publish your own copy” below first.
 
 You install Cache from the live website. You do **not** need to download the repository ZIP, compile anything, or have a GitHub account to use someone else's published copy. This is a home-screen web app, not an APK or an App Store download.
 
