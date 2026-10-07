@@ -8,8 +8,7 @@ A simple to-do app for your phone. Put everything in **Main Memory**, choose a f
 
 **[Open Cache](https://atmanainapure.github.io/cache-to-do-app/)**
 
-
-You install Cache from the live website. You do **not** need to download the repository ZIP, compile anything, or have a GitHub account to use someone else's published copy. This is a home-screen web app, not an APK or an App Store download.
+This is a home-screen web app, not an APK or an App Store download.
 
 ### iPhone or iPad
 
@@ -21,8 +20,6 @@ You install Cache from the live website. You do **not** need to download the rep
 6. Wait until **Offline ready** appears near the bottom of the app. You can also tap the phone icon to see this status.
 7. Start entering your tasks in the home-screen app. To check offline use, turn on airplane mode, turn Wi-Fi off, close Cache, and open it again. Turn your connections back on after the check.
 
-[Apple's home-screen installation instructions](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios)
-
 ### Android
 
 1. Open the **Open Cache** link above in **Chrome**, using a regular tab rather than Incognito. If needed, open the link outside a social or messaging app's built-in browser.
@@ -31,8 +28,6 @@ You install Cache from the live website. You do **not** need to download the rep
 4. Open **Cache from your home screen or app drawer while you are still online**.
 5. Wait for **Offline ready** near the bottom of the app, then add your tasks.
 6. To check offline use, turn on airplane mode, turn Wi-Fi off, close Cache, and reopen it. Turn your connections back on afterward.
-
-[Google's Android installation instructions](https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=en)
 
 **Install first, then add tasks.** A browser tab and a home-screen installation may use separate storage on some devices. If a list you entered in the browser does not appear in the installed app, export a backup from the browser and restore it in the installed app.
 
