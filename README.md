@@ -8,7 +8,7 @@ A simple to-do app for your phone. Put everything in **Main Memory**, choose a f
 
 **[Open Cache](https://atmanainapure.github.io/cache-to-do-app/)**
 
-This is a home-screen web app, not an APK or an App Store download.
+VERY IMPORTANT: This is a home-screen web app, not an APK or an App Store download.
 
 ### iPhone or iPad
 
@@ -48,7 +48,7 @@ Unfinished tasks stay in Cache overnight. The daily progress count uses your dev
 - Tasks are stored in the browser's **IndexedDB storage on your device**. There is no external database, login, or automatic sync.
 - Opening this same app on someone else's phone gives them their own list. They cannot see your tasks through the app.
 - GitHub Pages serves the app's HTML, JavaScript, CSS, and icons. Task text is not sent to GitHub or any app server. The hosting provider can still receive ordinary website requests and access logs.
-- The app has no analytics, ads, third-party fonts, or external scripts. Everything needed to run it is included here.
+- The app has **no analytics, ads**, third-party fonts, or external scripts. Everything needed to run it is included here.
 - The first load and app updates need internet access. Day-to-day task changes work offline after setup.
 - The app asks the browser to retain local storage when supported, but browsers and operating systems can still remove data. Clearing site/app data, private browsing, device loss, and some uninstall or storage-cleanup actions can erase your list.
 - A different browser, device, domain, or repository URL can have a separate list. Keep your published URL stable and export a backup before changing it.
@@ -69,9 +69,5 @@ Tap the **Backups** button in the top bar (the archive-box icon).
 1. Open Backups on the destination device or installation.
 2. Under **Restore a Cache backup**, choose your JSON file.
 3. Check the task count, then tap **Restore missing tasks**.
-
-Restore adds task IDs that are not already present. It keeps their categories, spaces, and completion dates. Existing tasks with the same ID remain unchanged. Reading and creating a backup happens locally; no file is uploaded.
-
-
 
 
