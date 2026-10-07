@@ -74,50 +74,7 @@ Restore adds task IDs that are not already present. It keeps their categories, s
 
 **Do not upload your personal backup JSON files to a public GitHub repository.** The public repository should contain only the app files.
 
-## Publish your own copy on GitHub Pages
 
-You only need to do this once as the publisher. Afterward, anyone can install your copy from its link. GitHub Pages is available for public repositories on GitHub Free.
-
-### 1. Prepare the files
-
-1. Download and extract **Cache-GitHub-Pages.zip** on your computer.
-2. Open the extracted **cache-todo** folder.
-3. You should see `index.html`, `sw.js`, `manifest.webmanifest`, `README.md`, the app JavaScript and stylesheet, and the icon files. Keep their filenames unchanged.
-4. Upload these prepared files, **not the older server-based Cache source package**. This version needs no database configuration, environment variables, Node.js installation, or build step.
-
-### 2. Create a public repository
-
-1. Sign in at [GitHub](https://github.com) and visit [Create a new repository](https://github.com/new).
-2. Use the repository name **cache-todo**.
-3. Choose **Public** so other people can access the code and the free Pages site.
-4. Leave **Add a README file**, **Add .gitignore**, and **Choose a license** unset for this initial upload. This folder already includes its README; you can choose a license separately if you want to grant reuse permissions.
-5. Click **Create repository**.
-
-### 3. Upload the extracted files
-
-1. On the empty repository page, click **uploading an existing file**. If you already created a README, use **Add file → Upload files** instead.
-2. Drag the **contents** of the extracted `cache-todo` folder into the upload area. Do not upload the ZIP itself, and do not put the whole enclosing folder inside another folder in the repository.
-3. Confirm that `index.html` and `README.md` will be at the repository's top level.
-4. The supplied `.nojekyll` file is hidden on some computers. To show it on a Mac, press **Command + Shift + .**; on Windows, turn on **View → Show → Hidden items**. Include it if possible. Alternatively, use **Add file → Create new file**, name it `.nojekyll`, put a single blank line in it, and commit it.
-5. Use the commit message **Add Cache offline app** and save the files to the **main** branch. The final button may say **Commit changes** or **Propose changes**. If GitHub creates a pull request, merge it so the files are on `main`.
-
-### 4. Enable the live website
-
-1. In your repository, open **Settings → Pages**. On a narrow screen, Settings may be under the repository's overflow menu.
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Select the **main** branch and **/ (root)** folder, then click **Save**.
-4. Allow a few minutes for GitHub to publish the site. The **Actions** tab shows the Pages build/deployment status.
-5. Return to **Settings → Pages** and copy the published HTTPS address. For a repository named `cache-todo`, it normally has the form `https://your-github-username.github.io/cache-todo/`.
-6. Open that address. You should see Cache, with an empty task list and no sign-in prompt. Wait for **Offline ready**.
-
-### 5. Make installation easy for everyone
-
-1. Open `README.md` in GitHub and click its pencil/Edit button.
-2. Replace the placeholder **Open Cache** URL near the top with the exact published address from Settings → Pages. Remove the owner-only setup note above the installation instructions if you want a shorter public README.
-3. Save/commit the edit.
-4. On the repository's main page, edit **About** and paste the same address into **Website**.
-5. Share the live app address or this repository's README. Other people need only that link and the iPhone/Android instructions above. They do not need to fork the repository or create a GitHub account.
-6. Install it on your own phone using the same instructions.
 
 [GitHub file-upload instructions](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository) · [GitHub Pages configuration](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
@@ -134,11 +91,3 @@ You only need to do this once as the publisher. Afterward, anyone can install yo
 **My tasks are missing.** Check that you are using the same browser/installation and exact app URL. If you exported a backup, restore it. There is no server copy or account recovery.
 
 **How do I update the app?** Publish a new prepared version to the same repository and URL, keeping all files from that version together. Open Cache while online, close all Cache tabs/windows, then reopen it. The new service worker activates after the older app windows close. App-file updates do not deliberately clear the separate task store; keep a backup before substantial changes.
-
-## Files and development
-
-The published app is prebuilt and self-contained. `app.<hash>.js` includes the app and its UI libraries; `styles.<hash>.css` contains its styling. `sw.js` caches only the app files for offline use. `manifest.webmanifest` supplies home-screen metadata. The icon files are included locally.
-
-To preview the prepared files on a computer, serve this directory over localhost, for example with `python3 -m http.server 8000`, then open `http://localhost:8000/`. This optional development step is not needed for GitHub publishing or phone installation. A phone cannot use your computer's `localhost` address.
-
-See `THIRD-PARTY-NOTICES.txt` for bundled library notices. No personal tasks or backups are included in this repository.
